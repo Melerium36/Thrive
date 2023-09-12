@@ -300,7 +300,7 @@ focus_neighbour_top = NodePath(".")
 focus_neighbour_bottom = NodePath("../LoadGame")
 focus_previous = NodePath(".")
 mouse_filter = 1
-text = "NEW_GAMET"
+text = "NEW_GAME"
 __meta__ = {
 "_editor_description_": ""
 }
