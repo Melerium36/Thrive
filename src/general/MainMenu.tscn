@@ -300,7 +300,7 @@ focus_neighbour_top = NodePath(".")
 focus_neighbour_bottom = NodePath("../LoadGame")
 focus_previous = NodePath(".")
 mouse_filter = 1
-text = "NEW_GAME"
+text = "NEW_GAMET"
 __meta__ = {
 "_editor_description_": ""
 }
@@ -1041,14 +1041,6 @@ DialogText = "STEAM_INIT_FAILED_DESCRIPTION"
 [connection signal="pressed" from="MenuContainers/SocialMedia/DiscordButton" to="." method="OnSocialMediaButtonPressed" binds= [ "https://discordapp.com/invite/ECR9E8x" ]]
 [connection signal="pressed" from="MenuContainers/SocialMedia/FacebookButton" to="." method="OnSocialMediaButtonPressed" binds= [ "https://www.facebook.com/Thrive-182887991751358/" ]]
 [connection signal="pressed" from="MenuContainers/SocialMedia/TwitterButton" to="." method="OnSocialMediaButtonPressed" binds= [ "https://twitter.com/Thrive_Game" ]]
-[connection signal="OnOptionsClosed" from="OptionsMenu" to="." method="OnReturnFromOptions"]
-[connection signal="OnBackPressed" from="SaveManagerGUI" to="." method="OnReturnFromLoadGame"]
-[connection signal="OnNewGameSettingsClosed" from="NewGameSettings" to="." method="OnReturnFromNewGameSettings"]
-[connection signal="OnNewGameVideoStarted" from="NewGameSettings" to="." method="OnNewGameIntroVideoStarted"]
-[connection signal="OnWantToSwitchToOptionsMenu" from="NewGameSettings" to="." method="OnRedirectedToOptionsMenuFromNewGameSettings"]
-[connection signal="OnThriveopediaClosed" from="Thriveopedia" to="." method="OnReturnFromThriveopedia"]
 [connection signal="hide" from="LicensesDisplay" to="." method="OnReturnFromLicenses"]
 [connection signal="hide" from="GalleryViewer" to="." method="OnReturnFromArtGallery"]
-[connection signal="OnFinishedSignal" from="CreditsView/CreditsScroll" to="." method="OnReturnFromCredits"]
 [connection signal="pressed" from="CreditsView/Back" to="." method="OnReturnFromCredits"]
-[connection signal="OnClosed" from="ModManager" to="." method="OnReturnFromMods"]
